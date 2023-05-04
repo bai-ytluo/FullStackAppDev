@@ -7,11 +7,11 @@ app.use('/api/v1/', routeTest);
 
 mongoose
     .connect(
-        'mongodb+srv://adimin:admin@cluster0.nakegvh.mongodb.net/?retryWrites=true&w=majority',
+        'mongodb+srv://<Your username>:<Your password>@cluster0.nakegvh.mongodb.net/?retryWrites=true&w=majority',
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            dbName: 'testDB',
+            dbName: '<Database Name>',
         },
     )
     .then(() => {
